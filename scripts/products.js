@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://iphonestorerost.onrender.com/api';
 
 const categoryNames = {
   'iphones': '1',
@@ -75,7 +76,7 @@ async function renderProducts(products) {
           class="catalog-item-img"
         />
         <span class="catalog-item-name">${product.name} ${product.storage}</span>
-        <span class="catalog-item-price">${product.price}</span>
+        <span class="catalog-item-price">от ${product.price}</span>
         <button class="catalog-item-btn button-blue">Заказать</button>
       </div>
 
@@ -206,7 +207,8 @@ async function sort(selector, sort, sortName) {
   })
 }
 
-const botID = 'sdfsrgewsgesbot';
+// const botID = 'IphoneStoreRostovBot';
+const botID = 'stornnnn';
 function buy(categoryId, productId) {
   window.open('https://t.me/' + botID + '?start=' + categoryId + '-' + productId, '_blank');
 }

@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://iphonestorerost.onrender.com/api';
 
 console.log('index...')
 
@@ -52,7 +53,7 @@ function renderSliderProducts(selector, products) {
 											alt="Аксессуары"
 											class="popular-image"
 										/>
-										<span class="popular-price">${product.price} руб.</span>
+										<span class="popular-price">от ${product.price} руб.</span>
 									</div>
 									<div
 										class="item__3d-frame__box item__3d-frame__box--left"
@@ -100,7 +101,7 @@ function addListeners() {
 }
 
 
-const botID = 'sdfsrgewsgesbot';
+const botID = 'stornnnn';
 function buy(categoryId, productId) {
   window.open('https://t.me/' + botID + '?start=' + categoryId + '-' + productId, '_blank');
 }
